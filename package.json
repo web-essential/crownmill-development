@@ -1,0 +1,37 @@
+{
+  "name": "@terzblitz/crownmill-development",
+  "version": "1.0.0",
+  "description": "Specialized management software for crownmill supply.",
+  "homepage": "https://github.com/web-essential/crownmill-development#readme",
+  "bugs": {
+    "url": "https://github.com/web-essential/crownmill-development/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-essential/crownmill-development.git"
+  },
+  "license": "MIT",
+  "author": "terzblitz",
+  "type": "module",
+  "main": "lib/index.cjs",
+  "exports": {
+    "import": {
+      "default": "./lib/index.esm.js",
+      "types": "./lib/types/index.d.ts"
+    },
+    "require": {
+      "default": "./lib/index.esm.js",
+      "types": "./lib/types/index.d.ts"
+    }
+  },
+  "files": ["lib"],
+  "scripts": {
+      "build": "rollup -c"
+  },
+  "devDependencies": {
+    "rollup": "^4.34.9",
+    "rollup-plugin-delete": "^3.0.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.8.2"
+  }
+}
